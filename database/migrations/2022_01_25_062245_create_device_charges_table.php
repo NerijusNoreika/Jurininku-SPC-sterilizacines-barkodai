@@ -18,7 +18,6 @@ class CreateDeviceChargesTable extends Migration
             $table->tinyInteger('charge_index')->unsigned();
             $table->dateTime('start_date');
             $table->dateTime('end_date');
-            $table->unsignedBigInteger('barcode')->unique()->index();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('device_id');
             $table->timestamps();
